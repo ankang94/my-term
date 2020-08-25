@@ -1,0 +1,27 @@
+@import 'xterm/css/xterm.css';
+
+.term-pannel {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .term-block {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background-color: #424242;
+
+        .term-title {
+            margin: 20% auto;
+            text-align: center;
+            font-size: 28px;
+        }
+    }
+
+    .terminal.xterm {
+        .xterm-viewport {
+            overflow: hidden;
+        }
+    }
+}

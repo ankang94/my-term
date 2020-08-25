@@ -1,0 +1,36 @@
+.home-card {
+    height: calc(100% - 32px);
+    width: calc(100% - 32px);
+}
+  
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contitle {
+    margin-top: 5px;
+    color: #c0c5c8;
+}
+
+.mat-card-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 32px);
+}
+
+.title {
+    padding: 0.5rem 0;
+    color: #c0c5c8;
+}
+
+app-term {
+    height: 100%;
+}
+
+mat-sidenav {
+    min-width: 280px;
+}

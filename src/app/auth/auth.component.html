@@ -1,0 +1,22 @@
+<mat-card class="login-card">
+    <canvas class="login-bg"></canvas>
+    <mat-card-content style="margin-top: 5%;">
+        <form class="login-box" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="close">
+                <div class="movebar"></div>
+                <button type="button" mat-icon-button (click)="close()" tabindex="-1">&times;</button>
+            </div>
+            <img src="./assets/logo.svg" class="header-image"/>
+            <mat-form-field class="full-width">
+                <input matInput placeholder="用户名" value="Sushi" formControlName="username">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input type="password" matInput placeholder="密码" value="Sushi" formControlName="password">
+            </mat-form-field>
+            <div class="button-row">
+                <button type="button" mat-icon-button style="color: rgb(194, 194, 194);" (click)="openDialog()">设置</button>
+                <button type="submit" mat-raised-button color="primary" [disabled]="!loginForm.valid">登 录</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

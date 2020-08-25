@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>服务器IP</h1>
+<div mat-dialog-content>
+    <p>请咨询管理员输入服务器的ip地址</p>
+    <mat-form-field>
+        <input matInput [(ngModel)]="data.ip">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">取消</button>
+    <button mat-button [mat-dialog-close]="data.ip" cdkFocusInitial>确定</button>
+</div>
