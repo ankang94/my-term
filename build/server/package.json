@@ -1,0 +1,20 @@
+{
+  "name": "netipc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ipc": "0.0.1",
+    "log4js": "^3.0.6",
+    "node-ipc": "^9.1.1",
+    "uuid": "^8.3.0",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {}
+}

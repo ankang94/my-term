@@ -1,0 +1,31 @@
+{
+  "name": "h3term",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -c.extraMetadata.main=main.js --win --x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  },
+  "dependencies": {
+    "node-ipc": "^9.1.1",
+    "node-pty": "^0.9.0"
+  },
+  "build": {
+    "appId": "com.h3c.h3term",
+    "productName": "h3term",
+    "directories": {
+      "output": "build"
+    }, 
+    "win": {
+      "icon": "./favicon.ico",
+      "target": ["portable"]
+    }
+  }
+}
